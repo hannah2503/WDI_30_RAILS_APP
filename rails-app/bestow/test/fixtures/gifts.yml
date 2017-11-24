@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  receiver_id: 
+  giver_id: 
+  present: MyString
+  present_img: MyString
+  shop_link: MyString
+  price: 1.5
+
+two:
+  receiver_id: 
+  giver_id: 
+  present: MyString
+  present_img: MyString
+  shop_link: MyString
+  price: 1.5
