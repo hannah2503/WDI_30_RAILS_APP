@@ -1,9 +1,11 @@
 angular
-  .module('bestow', [])
+  .module('bestow')
   .controller('MainCtrl', MainCtrl);
 
-MainCtrl.$inject = ['$state'];
-function MainCtrl($state){
-  const vm = this;
-  console.log(vm);
+MainCtrl.$inject = [];
+
+function MainCtrl(
+
+) {
+    const vm = this;
 }

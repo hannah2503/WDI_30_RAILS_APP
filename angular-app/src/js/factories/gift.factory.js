@@ -1,12 +1,12 @@
 angular
   .module('bestow')
-  .factory('User', User);
+  .factory('Gift', Gift);
 
-User.$inject = ['API', '$resource'];
+Gift.$inject = ['API', '$resource'];
 
-function User(API, $resource) {
+function Gift(API, $resource) {
   return $resource(
-    `${API}/users/:id`,
+    `${API}/gifts/:id`,
     { id: '@_id' },
     {
       update: { method: 'PUT' }
