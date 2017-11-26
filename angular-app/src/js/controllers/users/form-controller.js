@@ -10,6 +10,7 @@ function UsersFormCtrl($scope, User, $state) {
   vm.submitFriend = addFriend;
 
   function createUser(){
+    console.log(vm.user);
     User
       .save(vm.user)
       .$promise

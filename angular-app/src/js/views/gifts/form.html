@@ -1,11 +1,19 @@
 <h1>GIFT FORM PAGE</h1>
-<li>{{vm.gifts[0].present}}</li>
-<li>£{{vm.gifts[0].price}}</li>
-<input type="button" name="shuffle" value="RANDOMISE" ng-click="vm.shuffle(vm.gifts)">
-<br>
+<form ng-submit="vm.create()">
+  <input type="button" name="shuffle" value="RANDOMISE" ng-click="vm.shuffle(vm.gifts)">
+<input type="text" name="present" ng-model="vm.gifts.present" placeholder="{{vm.gifts[0].present}}">
+<input type="text" name="price" ng-model="vm.gifts.price" placeholder="£{{vm.gifts[0].price}}">
+<img src="{{vm.gifts[0].present_img}}" alt="IMAGE YO" width="300px">
+<input type="text" name="giver_id" placeholder="{{vm.thisUser.id}}">
+<input type="text" name="receiver_id" placeholder="{{vm.friend.id}}">
+<input type="submit" value="SAVE">
+</form>
+
+<!-- <br>
 <a href="{{vm.gifts[0].shop_link}}">{{vm.gifts[0].shop_link}}</a>
 <img src="{{vm.gifts[0].present_img}}" alt="IMAGE YO" width="300px">
-<li>{{vm.thisUser.id}}</li>
-<li>{{vm.friend.id}}</li>
 
-<button type="button" name="button" ng-click="vm.save(vm.gift)">SAVE</button>
+<input type="button" name="shuffle" value="RANDOMISE" ng-click="vm.shuffle(vm.gifts)">
+<button type="button" name="button" ng-click="vm.create(vm.gifts[0])">SAVE</button>
+<li>{{vm.thisUser.id}}</li>
+<li>{{vm.friend.id}}</li> -->

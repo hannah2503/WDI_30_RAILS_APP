@@ -7,11 +7,7 @@ GiftsFormCtrl.$inject = ['$scope', 'Gift', '$stateParams', 'User'];
 function GiftsFormCtrl($scope, Gift, $stateParams, User) {
   const vm = this;
   vm.shuffle = shuffleGifts;
-  vm.save = saveGift;
-  
-
-
-
+  vm.create = createPresent;
 
   User
     .query()
@@ -24,8 +20,6 @@ function GiftsFormCtrl($scope, Gift, $stateParams, User) {
       vm.thisUser = thisUser[0];
       vm.friend = thisUser[1];
     });
-
-
 
   Gift
     .query()
@@ -42,13 +36,14 @@ function GiftsFormCtrl($scope, Gift, $stateParams, User) {
     console.log(newArray);
   }
 
-  function saveGift(gift){
-    console.log('clicked save!');
+  function createPresent(){
+    console.log('clicked!');
+    console.log(vm.gift);
     Gift
-      .update({receiver_id: vm.friend.id, giver_id: vm.thisUser.id  }, gift)
+      .save(vm.gift)
       .$promise
       .then((gift) =>{
-        console.log(gift);
+        console.log('saved this present', gift);
       });
   }
 
