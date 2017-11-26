@@ -25,7 +25,7 @@ function UsersFormCtrl($scope, User, $state) {
       .$promise
       .then(user => {
         console.log('new friend added', user);
-        $state.go('usersIndex');
+        $state.go('giftsNew');
       });
   }
 

@@ -40,11 +40,25 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
       templateUrl: '/js/views/users/form.html',
       controller: 'UsersEditCtrl as vm'
     })
-
     .state('giftsIndex', {
       url: '/gifts',
       templateUrl: '/js/views/gifts/index.html',
       controller: 'GiftsIndexCtrl as vm'
+    })
+    .state('giftsNew', {
+      url: '/gifts/new',
+      templateUrl: '/js/views/gifts/form.html',
+      controller: 'GiftsFormCtrl as vm'
+    })
+    .state('giftsShow', {
+      url: '/gifts/:id',
+      templateUrl: '/js/views/gifts/show.html',
+      controller: 'GiftsShowCtrl as vm'
+    })
+    .state('giftsEdit', {
+      url: '/gifts/:id/edit',
+      templateUrl: '/js/views/gifts/form.html',
+      controller: 'GiftsEditCtrl as vm'
     });
 
   $urlRouterProvider.otherwise('/');
