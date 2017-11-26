@@ -9,13 +9,13 @@ function MainCtrl($scope, User) {
   vm.submitForm = createUser;
 
   function createUser(){
-
-    User
-      .save(vm.user)
-      .$promise
-      .then(user => {
-        console.log('user created', user);
-      });
-
+console.log('clicked');
+  //   User
+  //     .save(vm.user)
+  //     .$promise
+  //     .then(user => {
+  //       console.log('user created', user);
+  //     });
+  //
   }
 }

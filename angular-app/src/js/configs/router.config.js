@@ -18,22 +18,33 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('usersIndex', {
       url: '/users',
       templateUrl: '/js/views/users/index.html',
+      controller: 'UsersIndexCtrl as vm'
+    })
+    .state('usersNew', {
+      url: '/users/new',
+      templateUrl: '/js/views/users/form.html',
       controller: 'UsersFormCtrl as vm'
-    // })
-    // .state('eventsShow', {
-    //   url: '/events/:id',
-    //   templateUrl: '/js/views/events/show.html',
-    //   controller: 'EventsShowCtrl as vm'
-    // })
-    // .state('groupsNew', {
-    //   url: '/groups/new/:id',
-    //   templateUrl: '/js/views/groups/new.html',
-    //   controller: 'GroupsNewCtrl as vm'
-    // })
-    // .state('groupsShow', {
-    //   url: '/groups/:id',
-    //   templateUrl: '/js/views/groups/show.html',
-    //   controller: 'GroupsShowCtrl as vm'
+    })
+    .state('usersFriend', {
+      url: '/users/new/friend',
+      templateUrl: '/js/views/users/friend.html',
+      controller: 'UsersFormCtrl as vm'
+    })
+    .state('usersShow', {
+      url: '/users/:id',
+      templateUrl: '/js/views/users/show.html',
+      controller: 'UsersShowCtrl as vm'
+    })
+    .state('usersEdit', {
+      url: '/users/:id/edit',
+      templateUrl: '/js/views/users/form.html',
+      controller: 'UsersEditCtrl as vm'
+    })
+
+    .state('giftsIndex', {
+      url: '/gifts',
+      templateUrl: '/js/views/gifts/index.html',
+      controller: 'GiftsIndexCtrl as vm'
     });
 
   $urlRouterProvider.otherwise('/');

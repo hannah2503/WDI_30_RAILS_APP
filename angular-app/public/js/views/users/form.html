@@ -1,0 +1,21 @@
+<form class="pure-form pure-form-stacked" ng-submit="vm.submitForm()" ng-controller="UsersFormCtrl">
+    <fieldset>
+
+        <label for="name">Your Name</label>
+        <input id="name" type="text" placeholder="Your Name" ng-model="vm.user.name">
+
+        <label for="photo">Your Photo</label>
+        <input id="photo" type="text" placeholder="Your Photo" ng-model="vm.user.photo">
+
+        <!-- <div class="l-box-lrg pure-u-1">
+          <label for="0-5">£0 - £5</label>
+          <input type="radio" class="pure-radio" name="price">
+          <label for="0-5">£5 - £10</label>
+          <input type="radio" class="pure-radio" name="price">
+          <label for="0-5">£10 - £15</label>
+          <input type="radio" class="pure-radio" name="price">
+        </div> -->
+
+        <button type="submit" class="pure-button">Submit</button>
+    </fieldset>
+</form>
