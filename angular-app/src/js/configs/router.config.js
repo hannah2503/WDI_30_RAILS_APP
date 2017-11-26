@@ -18,7 +18,7 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('usersIndex', {
       url: '/users',
       templateUrl: '/js/views/users/index.html',
-      controller: 'UsersIndexCtrl as vm'
+      controller: 'UsersFormCtrl as vm'
     // })
     // .state('eventsShow', {
     //   url: '/events/:id',

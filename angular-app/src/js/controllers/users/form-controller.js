@@ -1,10 +1,10 @@
 angular
   .module('bestow')
-  .controller('MainCtrl', MainCtrl);
+  .controller('UsersFormCtrl', UsersFormCtrl);
 
-MainCtrl.$inject = ['$scope', 'User'];
+UsersFormCtrl.$inject = ['$scope', 'User'];
 
-function MainCtrl($scope, User) {
+function UsersFormCtrl($scope, User) {
   const vm = this;
   vm.submitForm = createUser;
 
