@@ -6,8 +6,6 @@ GiftsIndexCtrl.$inject = ['$scope', 'Gift'];
 
 function GiftsIndexCtrl($scope, Gift) {
   const vm = this;
-  vm.shuffle = shuffleGifts;
-  vm.save = saveGift;
 
   Gift
     .query()
