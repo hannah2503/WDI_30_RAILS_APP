@@ -22,14 +22,16 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state('usersNew', {
       url: '/users/new',
-      templateUrl: '/js/views/users/form.html',
-      controller: 'UsersFormCtrl as vm'
-    })
-    .state('usersFriend', {
-      url: '/users/new/friend',
       templateUrl: '/js/views/users/friend.html',
       controller: 'UsersFormCtrl as vm'
     })
+    .state('giftsChoose', {
+      url: '/users/new/friend/:id',
+      templateUrl: '/js/views/gifts/index.html',
+      controller: 'GiftsIndexCtrl as vm'
+    })
+
+
     .state('usersShow', {
       url: '/users/:id',
       templateUrl: '/js/views/users/show.html',

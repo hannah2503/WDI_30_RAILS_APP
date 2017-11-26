@@ -10,9 +10,6 @@
         <p class="splash-subhead">
             Welcome to Bestow, the random gift generator to make buying gifts that much easier...
         </p>
-        <p>
-            <a ui-sref="#" class="pure-button pure-button-primary">Scroll Down to Get Started</a>
-        </p>
     </div>
 </div>
 
@@ -22,14 +19,14 @@
 
         <div class="pure-g">
             <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                <form class="pure-form pure-form-stacked" ng-submit="vm.submitForm()" ng-controller="UsersFormCtrl">
+                <form class="pure-form pure-form-stacked" ng-submit="main.submitForm()">
                     <fieldset>
 
                         <label for="name">Your Name</label>
-                        <input id="name" type="text" placeholder="Your Name" ng-model="vm.user.name">
+                        <input id="name" type="text" placeholder="Your Name" ng-model="main.user.name">
 
                         <label for="photo">Your Photo</label>
-                        <input id="photo" type="text" placeholder="Your Photo" ng-model="vm.user.photo">
+                        <input id="photo" type="text" placeholder="Your Photo" ng-model="main.user.photo">
 
                         <!-- <div class="l-box-lrg pure-u-1">
                           <label for="0-5">£0 - £5</label>
@@ -45,7 +42,7 @@
                 </form>
             </div>
 
-            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+            <!-- <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
                 <h4>Contact Us</h4>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -54,7 +51,7 @@
                     consequat.
                 </p>
 
-            </div>
+            </div> -->
         </div>
     </div>
 

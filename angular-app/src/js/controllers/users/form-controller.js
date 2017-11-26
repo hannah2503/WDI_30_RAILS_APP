@@ -6,18 +6,7 @@ UsersFormCtrl.$inject = ['$scope', 'User', '$state'];
 
 function UsersFormCtrl($scope, User, $state) {
   const vm = this;
-  vm.submitForm = createUser;
   vm.submitFriend = addFriend;
-
-  function createUser(){
-    User
-      .save(vm.user)
-      .$promise
-      .then(user => {
-        console.log('user created', user);
-        $state.go('usersFriend');
-      });
-  }
 
   function addFriend(){
     User

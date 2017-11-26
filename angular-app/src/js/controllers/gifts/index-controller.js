@@ -24,9 +24,11 @@ function GiftsIndexCtrl($scope, Gift) {
     console.log(newArray);
   }
 
-  function saveGift(){
-
-  }
+  // function saveGift(){
+  //   Gift
+  //     .get
+  //
+  // }
 
 
 
