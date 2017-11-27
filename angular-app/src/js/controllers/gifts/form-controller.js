@@ -38,9 +38,9 @@ function GiftsFormCtrl($scope, Gift, $stateParams, User) {
 
   function createPresent(){
     console.log('clicked!');
-    console.log(vm.gift);
+    console.log(vm.gifts);
     Gift
-      .save(vm.gift)
+      .save(vm.gifts)
       .$promise
       .then((gift) =>{
         console.log('saved this present', gift);

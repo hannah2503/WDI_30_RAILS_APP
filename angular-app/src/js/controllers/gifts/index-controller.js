@@ -15,19 +15,4 @@ function GiftsIndexCtrl($scope, Gift) {
       console.log(vm.gifts);
     });
 
-  function shuffleGifts(array){
-    const newArray = array.sort(function (){
-      return 0.5 - Math.random();
-    });
-    console.log(newArray);
-  }
-
-  // function saveGift(){
-  //   Gift
-  //     .get
-  //
-  // }
-
-
-
 }
