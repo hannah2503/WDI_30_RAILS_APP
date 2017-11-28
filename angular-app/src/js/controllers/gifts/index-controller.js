@@ -14,6 +14,7 @@ function GiftsIndexCtrl($scope, Gift) {
       vm.gifts = gifts;
       console.log(vm.gifts);
     });
+<<<<<<< HEAD
   // 
   // function shuffleGifts(array){
   //   const newArray = array.sort(function (){
@@ -29,5 +30,7 @@ function GiftsIndexCtrl($scope, Gift) {
   // // }
 
 
+=======
+>>>>>>> aa581c1c3d0efa70c5377b3c42ba66132afb024b
 
 }

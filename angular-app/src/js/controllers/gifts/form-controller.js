@@ -47,6 +47,20 @@ function GiftsFormCtrl($scope, Gift, $stateParams, User) {
     console.log(newArray);
   }
 
+<<<<<<< HEAD
+=======
+  function createPresent(){
+    console.log('clicked!');
+    console.log(vm.gifts);
+    Gift
+      .save(vm.gifts)
+      .$promise
+      .then((gift) =>{
+        console.log('saved this present', gift);
+      });
+  }
+
+>>>>>>> aa581c1c3d0efa70c5377b3c42ba66132afb024b
 
 
 }
