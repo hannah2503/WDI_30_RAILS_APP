@@ -14,19 +14,19 @@ function GiftsIndexCtrl($scope, Gift) {
       vm.gifts = gifts;
       console.log(vm.gifts);
     });
-
-  function shuffleGifts(array){
-    const newArray = array.sort(function (){
-      return 0.5 - Math.random();
-    });
-    console.log(newArray);
-  }
-
-  // function saveGift(){
-  //   Gift
-  //     .get
-  //
+  // 
+  // function shuffleGifts(array){
+  //   const newArray = array.sort(function (){
+  //     return 0.5 - Math.random();
+  //   });
+  //   console.log(newArray);
   // }
+  //
+  // // function saveGift(){
+  // //   Gift
+  // //     .get
+  // //
+  // // }
 
 
 

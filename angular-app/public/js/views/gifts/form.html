@@ -1,11 +1,13 @@
 <h1>GIFT FORM PAGE</h1>
-<form ng-submit="vm.create()">
-  <input type="button" name="shuffle" value="RANDOMISE" ng-click="vm.shuffle(vm.gifts)">
+<input type="button" name="shuffle" value="RANDOMISE" ng-click="vm.shuffle(vm.gifts)">
+<form ng-submit="vm.create()" ng-controller="GiftsFormCtrl">
+
 <input type="text" name="present" ng-model="vm.gifts.present" placeholder="{{vm.gifts[0].present}}">
 <input type="text" name="price" ng-model="vm.gifts.price" placeholder="£{{vm.gifts[0].price}}">
 <img src="{{vm.gifts[0].present_img}}" alt="IMAGE YO" width="300px">
-<input type="text" name="giver_id" placeholder="{{vm.thisUser.id}}">
-<input type="text" name="receiver_id" placeholder="{{vm.friend.id}}">
+<input type="text" name="giver_id" ng-model="vm.gifts.giver_id" placeholder="{{vm.thisUser.id}}">
+<input type="text" name="receiver_id"  ng-model="vm.gifts.receiver_id" placeholder="{{vm.friend.id}}">
+<input type="text" name="shop_link" ng-model="vm.gifts.shop_link" placeholder="£{{vm.gifts[0].shop_link}}">
 <input type="submit" value="SAVE">
 </form>
 

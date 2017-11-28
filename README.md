@@ -1,3 +1,5 @@
 # WDI_30_RAILS_APP
 
-DID THE GITCLONE WORK?
+A test project by Wilson Espina and Hannah Cross.
+
+November 2017
